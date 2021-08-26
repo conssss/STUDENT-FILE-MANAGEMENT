@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navigator">
+
+                <ul>
+                    <li>
+                        <a href="#"><br>
+                        <span class="icon"><i class="fa fa-files-o" aria-hidden="true"></i></span>
+                        <span class="title"><h1 style="color:white;font-size:40px;">PSU Files</h1></span>
+
+                    </a>
+                    </li>
+                    <br><br>
+                    <li>
+                        <a href="home.html">
+                        <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                        <span class="title"><h2 style="color:white;font-size:30px;">Dashboard</h2></span>
+                    </a>
+                    </li><br>
+                    <li>
+                        <a href="masterlist.php">
+                        <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="title"><h2 style="color:white;font-size:30px;">Masterlist</h2></span>
+                    </a>
+                    </li><br>
+                    <li>
+                        <a href="index.php">
+                        <span class="icon"><i class="fa fa-files-o" aria-hidden="true"></i></span>
+                        <span class="title"><h2 style="color:white;font-size:30px;">Manage Files</h2></span>
+                    </a>
+                    </li><br>
+                    <li>
+                        <a href="login.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title"><h2 style="color:white;font-size:30px;">Sign Out</h2></span>
+                    </a>
+                    </li>
+                    </li>
+                </ul>
+            </div> 
+
+            <div class="main active">
+                <div class="topbar">
+                     <div class="toggle" onclick="toggleMenu();"></div>
+                    <div class="search">
+                       
+                    </div>
+                        <div class="user">
+                           <img src="Pangasinan_State_University_logo.png">
+                    </div>
+                </div>
+
+                <div class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">842</div>
+                            <div class="cardName">Views</div>
+                        </div>
+                        <div class="iconBox"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">480</div>
+                            <div class="cardName">Total Student</div>
+                        </div>
+                        <div class="iconBox"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div>
+                            <div class="numbers">3</div>
+                            <div class="cardName">Total Course</div>
+                        </div>
+                        <div class="iconBox"><i class="fa fa-book" aria-hidden="true"></i></div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">24</div>
+                            <div class="cardName">Blocks</div>
+                        </div>
+                        <div class="iconBox"><i class="fa fa-th-large" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <script>
+            function toggleMenu()
+            {
+                let toggle = document.querySelector('.toggle');
+                let navigator = document.querySelector('.navigator');
+                let main = document.querySelector('.main');
+                toggle.classList.toggle('active')
+                navigator.classList.toggle('active')
+                main.classList.toggle('active')
+                
+               
+            }
+        </script>
+    </body>
+</html>
